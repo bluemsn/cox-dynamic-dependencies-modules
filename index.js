@@ -1,39 +1,35 @@
-// 暴露一个对象 方便后续扩展
 module.exports = {
-  depModules: [{
-    defineId: 'kg/cox-slider/index',
-    dataService: {
-            // 通用描述 尽可能与mtop API中参数 格式 保持一致
-      api: '',
-      data: '',
-      param: ''
-    },
-    spmc: 'a.b.c',
-    style: {
-      topMargin: 1
-    },
-    componentData: {
-      
-    }
-  }, {
-    defineId: 'kg/cox-page-init/page/body',
-    dataService: {
-            // 通用描述 尽可能与mtop API中参数 格式 保持一致
-      api: '',
-      data: '',
-      param: ''
-    },
-    spmc: 'a.b.c',
-    componentData: {}
-  }, {
-    defineId: 'kg/cox-page-init/page/footer',
-    dataService: {
-            // 通用描述 尽可能与mtop API中参数 格式 保持一致
-      api: '',
-      data: '',
-      param: ''
-    },
-    spmc: 'a.b.c',
-    componentData: {}
-  }]
+    depModules: [{
+        defineId: 'kg/cox-slider/index',
+        dataService: {
+            api: '',
+            param: ''
+        },
+        spmc: 'a.b.c',
+        style: {
+            topMargin: 1
+        },
+        componentData: {
+            lists: [{
+                imgUrl: '//img.alicdn.com/tps/TB1m2LyJFXXXXbHXpXXXXXXXXXX-1125-352.jpg_q50.jpg',
+                link: 'http://m.1688.com'
+            }, {
+                imgUrl: '//img.alicdn.com/tps/TB1ogUvJFXXXXaAXXXXXXXXXXXX-1125-352.jpg_q50.jpg',
+                link: 'http://m.1688.com'
+            }, {
+                imgUrl: '//img.alicdn.com/tps/TB1LsIOJFXXXXasaXXXXXXXXXXX-1125-352.jpg_q50.jpg',
+                link: 'http://m.1688.com'
+            }, {
+                imgUrl: '//gw.alicdn.com/tps/i2/TB1lricJVXXXXcfXXXXdIns_XXX-1125-352.jpg_q50.jpg',
+                link: 'http://m.1688.com'
+            }],
+            config: [{
+                height: 298,
+                autoPlayInterval: 4000
+            }]
+        }
+    }, {
+        defineId: 'kg/cox-banner-maparea/index',
+        dataSourceId: 15776
+    }]
 };
