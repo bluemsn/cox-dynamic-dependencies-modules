@@ -1,4 +1,7 @@
 module.exports = {
+    pageConfig: {
+        style: {}
+    },
     depModules: [{
         defineId: 'kg/cox-slider/index',
         dataService: {
